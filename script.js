@@ -3,8 +3,8 @@ const header = document.querySelector('.header');
 const heroSection = document.querySelector('.section-hero');
 const nav = document.querySelector('.main-nav');
 const navMobileBtn = document.querySelector('.btn-mobile-nav');
-const iconOpen = document.querySelector('.header');
-const iconClose = document.querySelector('.header');
+const iconOpen = document.querySelector('.icon-open-nav');
+const iconClose = document.querySelector('.icon-close-nav');
 
 /////////////////////////////////////////////////
 // Mobile NAV

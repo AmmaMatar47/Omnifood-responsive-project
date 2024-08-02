@@ -662,3 +662,38 @@
   display: flex;
   align-items: center;
 }
+
+.codded-by-text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.github-link:link,
+.github-link:visited {
+  position: relative;
+  color: #e67e22;
+  text-decoration: none;
+  font-size: 2.4rem;
+  transition: all 0.4s;
+}
+
+.github-link::after {
+  content: '';
+  position: absolute;
+  inset: 100% 0 0 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(1);
+  background-color: #e67e22;
+  transition: all 0.4s;
+}
+
+.github-link:hover,
+.github-link:active {
+  color: #cf711f;
+  text-decoration: none;
+  font-size: 2.4rem;
+  &.github-link::after {
+    transform: scaleX(0);
+  }
+}
